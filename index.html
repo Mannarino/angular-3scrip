@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="tor">
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      img{height: 400px;
+        width: 100%;}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mannarino</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav  navbar-nav navbar-right">
+        
+        <li><a href="script1.html">Script 1</a></li>
+        <li><a href="script2.html">Script 2</a></li>
+        <li><a href="script3.html">Script 3</a></li>
+        
+      </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container" ><div ng-view></div></div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Scripts en Angular</h1>
+        <p>Este simple sitio muestra tres script sencillos que realize con angularjs. </p>
+       <img src="angularjs.jpg">
+      </div>
+      
+    </div>
+   
+ 
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Script uno</h2>
+          <p>calculadora que hace un calculo de suma y de promedio segun lo ingresado en 3 campos. </p>
+          <p><a class="btn btn-default" href="script1.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Script 2</h2>
+          <p>script para ir agregando contactos a una lista por medio de un formulario. </p>
+          <p><a class="btn btn-default" href="script2.html" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Script 3</h2>
+          <p>consume una rest api para cargar dinamicamente un listado de paises segun el cotinente que se eliga en un select.</p>
+          <p><a class="btn btn-default" href="script3.html" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Desarrollado por Moisés Mannarino</p>
+      </footer>
+    </div> <!-- /container -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+
+    <script src="https://code.angularjs.org/1.6.3/angular-route.min.js"></script>
+    <script type="text/javascript" src="j.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="tor">
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mannarino</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav  navbar-nav navbar-right">
+        
+         <li><a href="script1.html">Script 1</a></li>
+        <li><a href="script2.html">Script 2</a></li>
+        <li><a href="script3.html">Script 3</a></li>
+        
+      </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+   
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <br><br><br><br>
+      <div class="jumbotron">
+          <h1>Calculadora de suma y promedio</h1>
+          <p>Ingrese unos datos en los campos y luego estos se guardan, y se refrescaran los datos</p>
+          <img src="angularjs.png"> <div class="row" ng-app="automatica">
+       
+
+         
+      </div>
+        </div>
+      
+<div ng-controller="alumnos">
+    <div ng-repeat="dato in lista">
+      <p> {{dato.nombre}} ... {{dato.telefono}}
+      {{dato.curso}}</p> 
+  
+    </div>
+    <br>  
+    <button ng-click="showForm()" ng-hide="formVisibiliti"  class="btn btn-danger"> añadir contacto</button>
+    <form ng-show="formVisibiliti">
+    <input type="text" ng-model="recojo.nombre">
+    <input type="text" ng-model="recojo.curso">
+      <input type="text" ng-model="recojo.telefono">
+    <button ng-click="save()" class="btn btn-danger">guardar </button>
+    </form>
+
+
+</div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Desarrollado por Moisés Mannarino</p>
+      </footer>
+    </div> <!-- /container -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="j.js"></script>
+</body>
+</html>
